@@ -1,0 +1,22 @@
+1. Git
+- Khởi tạo git
+	git init
+- Đẩy tất cả file lên git
+	git add .
+- Tạo nội dung khi commit
+	git commit -m "<Nội dung commit>"
+- Chuyển nhánh sang main
+	git branch -M main
+- Kết nối với link repository vừa tạo trên git
+	git remote add origin <link repository>
+- Đẩy code lên git
+	git push -u origin main (đẩy lần đầu tiên)
+	git push (đẩy những lần sau)
+- Tạo thêm nhánh mới:
+	git branch -c <tên nhánh mới>
+- Đưa con trỏ trỏ tới nhánh mới (hoặc các nhánh nào cần trỏ tới)
+	git checkout <tên nhánh cần trỏ>
+- Tạo nhánh mới và trỏ tới nhánh đó
+	git checkout -b <tên nhánh mới>
+- Đẩy nhánh mới lên git
+	git push -u origin <tên nhánh>

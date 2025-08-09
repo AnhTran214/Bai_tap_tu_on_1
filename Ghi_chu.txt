@@ -20,3 +20,7 @@
 	git checkout -b <tên nhánh mới>
 - Đẩy nhánh mới lên git
 	git push -u origin <tên nhánh>
+- Xóa nhánh (trên máy)
+	git branch -D <tên nhánh cần xóa>
+- Xóa nhánh trên git
+	git push -d origin <tên nhánh cần xóa>

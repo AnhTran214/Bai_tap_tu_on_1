@@ -1,3 +1,8 @@
+body{
+    background-image: url(../IMG/house-9706056_1920.jpg);
+}
+
 h3{
     color: red;
+    opacity: 10%;
 }

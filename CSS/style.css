@@ -5,4 +5,18 @@ body{
 h3{
     color: red;
     opacity: 10%;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+img{
+    /* Thêm animation cho hình ảnh, thường chỉ dùng cho opacity */
+    transition: 1.5s;
+}
+
+/* Nếu input được check thì ảnh sẽ biến mất */
+input:checked ~ img{
+    opacity: 0;
+    /* display: none; */
+    /* visibility: hidden; */
 }

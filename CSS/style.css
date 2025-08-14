@@ -20,3 +20,37 @@ input:checked ~ img{
     /* display: none; */
     /* visibility: hidden; */
 }
+/* thêm CSS cho toàn bộ thẻ trên trang web */
+/* *{
+    color: aqua;
+    font-size: 30px;
+} */
+/* element.class */
+/* chỉ tác động đến thẻ p nào có class là demo */
+/* p.demo{
+    color: darkblue;
+    font-size: 30px;
+    background-color: brown;
+} */
+/* thêm CSS cho thẻ p và thẻ có class là demo, nếu có thêm id thì chỉ cần ,#id là được */
+p,.demo{
+    color: red;
+}
+/* chọn thẻ có tên class là đồng thời có cả 2 class demo và demo1 */
+.demo.demo1{
+    color: blueviolet;
+}
+/* tác dụng lên tất cả thẻ p là con, cháu, chắt,... của div */
+div p{
+    color: brown;
+    font-size: 30px;
+}
+/* Tác dụng lên thẻ p là con của thẻ có class là cdiv */
+.cdiv p{
+    color: coral;
+    font-size: 20px;
+}
+/* Tác dụng lên tất cả thẻ p là con trực tiếp của thẻ div */
+/* div > p{
+    color: burlywood;
+} */

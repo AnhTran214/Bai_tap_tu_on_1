@@ -33,18 +33,18 @@ input:checked ~ img{
     background-color: brown;
 } */
 /* thêm CSS cho thẻ p và thẻ có class là demo, nếu có thêm id thì chỉ cần ,#id là được */
-p,.demo{
+/* p,.demo{
     color: red;
-}
+} */
 /* chọn thẻ có tên class là đồng thời có cả 2 class demo và demo1 */
 .demo.demo1{
     color: blueviolet;
 }
 /* tác dụng lên tất cả thẻ p là con, cháu, chắt,... của div */
-div p{
+/* div p{
     color: brown;
     font-size: 30px;
-}
+} */
 /* Tác dụng lên thẻ p là con của thẻ có class là cdiv */
 .cdiv p{
     color: coral;
@@ -54,3 +54,29 @@ div p{
 /* div > p{
     color: burlywood;
 } */
+/* element1 + element2: chọn phần tử element2 đầu tiền được đặt ngay sau phần tử element1
+, có thể dùng sau class cũng được */
+/* định dạng CSS thẻ p nằm ngay sau thẻ div */
+div + p{
+    color: red;
+}
+/* định dạng thẻ h5 nằm ngay sau class demo2 */
+.demo2 + h5{
+    color: burlywood;
+}
+.demo.demo1 + div{
+    font-size: 40px;
+}
+/* element1~element2: chọn tất cả thẻ element2 nằm sau thẻ element1 mặc dù không nằm sát liền kề */
+/* Attribute selectors */
+/* [href]{
+    color: red;
+} */
+/* nếu chỉ muốn tác động vào 1 loại thẻ có thuộc tính nào đó thì */
+/* a[href]{
+    color: red;
+} */
+/* Ta có thể nêu cụ thể ra thuộc tính có giá trị là gì để gắn CSS */
+[target="_blank"]{
+    color: pink;
+}

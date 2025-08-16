@@ -80,3 +80,12 @@ div + p{
 [target="_blank"]{
     color: pink;
 }
+/* attribute~=value  chọn những thuộc tính có giá trị có từ chính xác trong dấu""*/
+[title~="Hello"]{
+    color: aqua;
+}
+/* attribute*=value  chọn những thuộc tính có giá trị có từ trong dấu "" khớp với từ trong chuỗi */
+[title*="Hello"]{
+    color: blue;
+}
+/* attribute|=value  chọn những thuộc tính có giá trị bắt đầu bằng value (nếu có thêm chuỗi phía sau phải được nối với nhau bằng dấu -) */

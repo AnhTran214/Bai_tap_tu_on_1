@@ -2,24 +2,24 @@ body{
     background-image: url(../IMG/house-9706056_1920.jpg);
 }
 
-h3{
+/* h3{
     color: red;
     opacity: 10%;
-    /* display: none; */
-    /* visibility: hidden; */
-}
+    display: none;
+    visibility: hidden;
+} */
 
-img{
-    /* Thêm animation cho hình ảnh, thường chỉ dùng cho opacity */
+/* img{
+    Thêm animation cho hình ảnh, thường chỉ dùng cho opacity
     transition: 1.5s;
-}
+} */
 
 /* Nếu input được check thì ảnh sẽ biến mất */
-input:checked ~ img{
+/* input:checked ~ img{
     opacity: 0;
-    /* display: none; */
-    /* visibility: hidden; */
-}
+    display: none;
+    visibility: hidden;
+} */
 /* thêm CSS cho toàn bộ thẻ trên trang web */
 /* *{
     color: aqua;
@@ -37,19 +37,19 @@ input:checked ~ img{
     color: red;
 } */
 /* chọn thẻ có tên class là đồng thời có cả 2 class demo và demo1 */
-.demo.demo1{
+/* .demo.demo1{
     color: blueviolet;
-}
+} */
 /* tác dụng lên tất cả thẻ p là con, cháu, chắt,... của div */
 /* div p{
     color: brown;
     font-size: 30px;
 } */
 /* Tác dụng lên thẻ p là con của thẻ có class là cdiv */
-.cdiv p{
+/* .cdiv p{
     color: coral;
     font-size: 20px;
-}
+} */
 /* Tác dụng lên tất cả thẻ p là con trực tiếp của thẻ div */
 /* div > p{
     color: burlywood;
@@ -57,16 +57,16 @@ input:checked ~ img{
 /* element1 + element2: chọn phần tử element2 đầu tiền được đặt ngay sau phần tử element1
 , có thể dùng sau class cũng được */
 /* định dạng CSS thẻ p nằm ngay sau thẻ div */
-div + p{
+/* div + p{
     color: red;
-}
+} */
 /* định dạng thẻ h5 nằm ngay sau class demo2 */
-.demo2 + h5{
+/* .demo2 + h5{
     color: burlywood;
 }
 .demo.demo1 + div{
     font-size: 40px;
-}
+} */
 /* element1~element2: chọn tất cả thẻ element2 nằm sau thẻ element1 mặc dù không nằm sát liền kề */
 /* Attribute selectors */
 /* [href]{
@@ -77,15 +77,20 @@ div + p{
     color: red;
 } */
 /* Ta có thể nêu cụ thể ra thuộc tính có giá trị là gì để gắn CSS */
-[target="_blank"]{
+/* [target="_blank"]{
     color: pink;
-}
+} */
 /* attribute~=value  chọn những thuộc tính có giá trị có từ chính xác trong dấu""*/
-[title~="Hello"]{
+/* [title~="Hello"]{
     color: aqua;
-}
+} */
 /* attribute*=value  chọn những thuộc tính có giá trị có từ trong dấu "" khớp với từ trong chuỗi */
-[title*="Hello"]{
+/* [title*="Hello"]{
     color: blue;
-}
+} */
 /* attribute|=value  chọn những thuộc tính có giá trị bắt đầu bằng value (nếu có thêm chuỗi phía sau phải được nối với nhau bằng dấu -) */
+/* 19/08/2025 */
+/* Thêm CSS cho các thẻ có class là top trừ thẻ p, dù thẻ p có class là top */
+.top:not(p){
+    background-color: blue;
+}

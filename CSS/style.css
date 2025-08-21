@@ -91,6 +91,24 @@ body{
 /* attribute|=value  chọn những thuộc tính có giá trị bắt đầu bằng value (nếu có thêm chuỗi phía sau phải được nối với nhau bằng dấu -) */
 /* 19/08/2025 */
 /* Thêm CSS cho các thẻ có class là top trừ thẻ p, dù thẻ p có class là top */
-.top:not(p){
+/* .top:not(p){
     background-color: blue;
+} */
+ /* 21/08/2025 */
+ /* margin âm */
+.avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    margin-left: -70px;
+}
+.avatar:first-child{
+    margin-left: 0;
+}
+.content{
+    background-color: yellow;
+    padding: 30px;
+    /* hiển thị 1 phần quanh nội dung, không chiếm hết 1 dòng */
+    display: inline-block;
 }

@@ -1,5 +1,7 @@
 body{
     background-image: url(../IMG/house-9706056_1920.jpg);
+    /* Chiều cao dòng */
+    line-height: 150%;
 }
 
 /* h3{
@@ -111,4 +113,63 @@ body{
     padding: 30px;
     /* hiển thị 1 phần quanh nội dung, không chiếm hết 1 dòng */
     display: inline-block;
+}
+p{
+    /* độ dày của chữ */
+    font-weight: 700;
+    text-shadow: 0px -10px 3px #322f2f;
+}
+/* 27/11/2025 */
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    /* Tự động hiện scroll khi tràn khung */
+    overflow: auto;
+    /* Điều chỉnh con lăn bên trong và bên ngoài theo yêu cầu */
+    overscroll-behavior: auto;
+}
+
+/* Custom thanh scroll của trang, mã code nằm trong trang https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
+/* Chiều rộng của scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Hộp chứa scroll bar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Thanh cuốn */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Thao tác khi di chuột vào thanh scroll */
+::-webkit-scrollbar-thumb:hover {
+  background: #04fe00;
+}
+/* Lưu ý: nếu chỉ muốn custom thanh scroll nhỏ bên trong, thì chỉ cần thêm .box trước dấu :: là được.
+Còn nếu không thêm thì mặc định chương trình sẽ hiểu cho tất cả (dấu *) */
+h2{
+    width: 300px;
+    white-space: nowrap;
+    background-color: greenyellow;
+    /* ẩn nội dung thừa */
+    overflow: hidden;
+    /* tạo dấu ... trên 1 dòng*/
+    text-overflow: ellipsis;
+    /* Lưu ý: text-overflow phải kết hợp với overflow để tạo dấu ... */
+}
+/* Tạo dấu ... trên 2,3 dòng */
+h3{
+    background-color: aquamarine;
+    overflow: hidden;
+    /* Tạo dấu ... ở dòng thứ bao nhiêu, vd: 2 là 2 dòng */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
